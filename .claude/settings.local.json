@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(wsl -d Ubuntu bash -c \"cd /home/daghosty/degen_wars/app && npm install 2>&1 | tail -20\")",
+      "PowerShell(wsl -d Ubuntu bash -c \"which node; which yarn; which pnpm; ls /usr/local/bin/ | grep -E 'node|yarn|npm|pnpm'\" 2>&1)",
+      "PowerShell(wsl -d Ubuntu bash -c \"export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh 2>/dev/null; which node; node --version; which yarn; yarn --version\" 2>&1)",
+      "PowerShell(wsl -d Ubuntu bash -c \"export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh; cd /home/daghosty/degen_wars/app && yarn install 2>&1 | tail -25\")",
+      "PowerShell(wsl -d Ubuntu bash -c \"export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh; cd /home/daghosty/degen_wars/app && yarn dev 2>&1 &\")",
+      "PowerShell(wsl -d Ubuntu bash -c \"curl -s -o /dev/null -w '%{http_code}' http://localhost:5173\" 2>&1)",
+      "PowerShell(wsl -d Ubuntu bash -c \"export NVM_DIR=~/.nvm && source ~/.nvm/nvm.sh; cd /home/daghosty/degen_wars/app && timeout 15 yarn dev 2>&1\")"
+    ]
+  }
+}
