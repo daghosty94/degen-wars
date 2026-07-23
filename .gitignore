@@ -6,3 +6,20 @@ node_modules
 test-ledger
 .yarn
 .surfpool
+# Solana private keys and token checkpoints
+.token-checkpoint.json
+**/.token-checkpoint.json
+id.json
+**/id.json
+*.keypair.json
+*-keypair.json
+
+# Local configuration and secrets
+.env
+.env.*
+.claude/settings.local.json
+
+# Windows metadata
+*:Zone.Identifier
+*_Zone.Identifier
+Zone.Identifier
